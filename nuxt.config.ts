@@ -1,19 +1,16 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-01',
-
   css: ['~/assets/css/main.css'],
 
   app: {
     head: {
-      htmlAttrs: { lang: 'zh-CN' },
-      title: 'CodeWithAI — AI-Powered Developer',
+      htmlAttrs: { lang: 'zh‑CN' },
+      title: 'CodeWithAI — AI‑Powered Developer',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-        { name: 'canvas:aspect-ratio', content: '16:9' },
+        { name: 'viewport', content: 'width=device‑width, initial‑scale=1.0' },
+        { name: 'canvas:aspect‑ratio', content: '16:9' },
         {
           name: 'description',
-          content:
-            'Building the future with Qoder & Trae — crafting intelligent experiences at the intersection of design and code.'
+          content: 'Building the future with Qoder & Trae — crafting intelligent experiences at the intersection of design and code.'
         }
       ],
       link: [
@@ -27,6 +24,8 @@ export default defineNuxtConfig({
     }
   },
 
+  // ✅ 这里，ssr:true 开启服务端渲染，配合 nitro static 做静态生成
+  ssr: true,
   nitro: {
     preset: 'static'
   }
