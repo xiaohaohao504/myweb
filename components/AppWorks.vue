@@ -12,7 +12,7 @@ const works: WorkItem[] = [
     id: 'reviewer',
     thumb: 'thumb-1',
     title: 'AI Code Reviewer',
-    desc: '智能代码审查工具，基于大语言模型的自动化代码质量分析。',
+    desc: '智能代码审查工具，基于大语言模型的自动化代码质量检查。',
     tags: [{ text: 'Python' }, { text: 'LangChain', cls: 'tag-blue' }, { text: 'GPT-4', cls: 'tag-cyan' }]
   },
   {
