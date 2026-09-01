@@ -35,4 +35,4 @@ npm run auto:commit -- --message "feat: 新增某功能"   # 使用自定义信�
 - 站点地址：https://xiaohaohao504.github.io/myweb/
 - 工作流：`.github/workflows/deploy.yml`
 
-> 首次部署前，请在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
+> 仓库已启用 GitHub Pages（Source: **GitHub Actions**）。每次推送 `main` 都会触发自动部署，可在仓库 **Actions** 标签页查看构建与部署进度。
