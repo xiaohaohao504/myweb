@@ -36,7 +36,7 @@ const customMessage = idx !== -1 ? process.argv[idx + 1] : ''
 
 function main() {
   // 1. 检测变更
-  const status = run('git status --porcelain')
+  const status = run('git status --porcelain -uall')
   if (!status) {
     console.log('✓ 没有检测到任何变更，跳过提交。')
     return
@@ -88,6 +88,7 @@ function generateMessage(lines, files) {
     [/package\.json/, '依赖配置'],
     [/\.github\/workflows\/deploy\.yml/, '部署工作流'],
     [/\.github/, 'GitHub Actions'],
+    [/scripts\/auto-commit\.mjs/, '自动提交脚本'],
   ]
 
   const modules = new Set()
